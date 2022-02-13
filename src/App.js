@@ -107,7 +107,7 @@ function App() {
     NETWORK: {
       NAME: "Ethereum",
       SYMBOL: "Eth",
-      ID: 137,
+      ID: 1,
     },
     NFT_NAME: "Meta World Cup",
     SYMBOL: "MWC",
