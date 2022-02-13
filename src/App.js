@@ -102,21 +102,21 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "",
-    SCAN_LINK: "",
+    CONTRACT_ADDRESS: "0x4be32742F9a0d7d51A96fD0Da8A0D51f63c0F860",
+    SCAN_LINK: "https://etherscan.io/address/0x4be32742f9a0d7d51a96fd0da8a0d51f63c0f860",
     NETWORK: {
-      NAME: "",
-      SYMBOL: "",
-      ID: 1,
+      NAME: "Ethereum",
+      SYMBOL: "Eth",
+      ID: 137,
     },
-    NFT_NAME: "",
-    SYMBOL: "",
-    MAX_SUPPLY: 1,
-    WEI_COST: 0,
-    DISPLAY_COST: 0,
-    GAS_LIMIT: 0,
-    MARKETPLACE: "",
-    MARKETPLACE_LINK: "",
+    NFT_NAME: "Meta World Cup",
+    SYMBOL: "MWC",
+    MAX_SUPPLY: 4480,
+    WEI_COST: 8000000000000000000,
+    DISPLAY_COST: 0.08,
+    GAS_LIMIT: 285000,
+    MARKETPLACE: "Opensea",
+    MARKETPLACE_LINK: "https://opensea.io/collection/meta-world-cup",
     SHOW_BACKGROUND: false,
   });
 
