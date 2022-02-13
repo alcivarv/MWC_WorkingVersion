@@ -1,13 +1,13 @@
 {
-  "name": "MWC Mint Dapp",
+  "name": "meta_world_cup",
   "version": "1.0.0",
-  "description": "Mint your MWC Collection with this Dapp.",
+  "description": "The MWC Minting app. Start minting NFTs.",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "4.0.3",
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.3.0",
@@ -15,11 +15,7 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-  "engines" : { 
-    "npm" : ">=8.5.0",
-    "node" : ">=16.0.0"
-  },
-  "author": "Meta Sports Labs",
+  "author": "Meta Sports Labs Inc.",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
@@ -36,8 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "minimist": "^1.2.5"
   }
 }
