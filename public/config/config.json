@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x4be32742F9a0d7d51A96fD0Da8A0D51f63c0F860",
+  "SCAN_LINK": "https://etherscan.io/address/0x4be32742f9a0d7d51a96fd0da8a0d51f63c0f860",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "Meta World Cup 2022",
+  "SYMBOL": "MWC",
+  "MAX_SUPPLY": 4480,
+  "WEI_COST": 90000000000000000,
+  "DISPLAY_COST": 0.08,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/meta-world-cup2022",
+  "SHOW_BACKGROUND": true
+}
