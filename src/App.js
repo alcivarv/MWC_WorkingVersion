@@ -102,21 +102,21 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "0x4be32742F9a0d7d51A96fD0Da8A0D51f63c0F860",
-    SCAN_LINK: "https://etherscan.io/address/0x4be32742f9a0d7d51a96fd0da8a0d51f63c0f860",
+    CONTRACT_ADDRESS: "",
+    SCAN_LINK: "",
     NETWORK: {
-      NAME: "Ethereum",
-      SYMBOL: "Eth",
-      ID: 1,
+      NAME: "",
+      SYMBOL: "",
+      ID: 0,
     },
-    NFT_NAME: "Meta World Cup 2022",
-    SYMBOL: "MWC",
-    MAX_SUPPLY: 4480 ,
-    WEI_COST: 80000000000000000,
-    DISPLAY_COST: 0.08 ,
-    GAS_LIMIT: 285000,
-    MARKETPLACE: "Opensea",
-    MARKETPLACE_LINK: "https://opensea.io/collection/meta-world-cup",
+    NFT_NAME: "",
+    SYMBOL: "",
+    MAX_SUPPLY: 1,
+    WEI_COST: 0,
+    DISPLAY_COST: 0,
+    GAS_LIMIT: 0,
+    MARKETPLACE: "",
+    MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
 
@@ -130,7 +130,7 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, mintAmount)
+      .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -201,9 +201,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <a href={CONFIG.MARKETPLACE_LINK}>
-          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-        </a>
+        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -242,32 +240,6 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
-            <span
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <StyledButton
-                onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
-                }}
-                style={{
-                  margin: "5px",
-                }}
-              >
-                Roadmap
-              </StyledButton>
-              <StyledButton
-                style={{
-                  margin: "5px",
-                }}
-                onClick={(e) => {
-                  window.open(CONFIG.MARKETPLACE_LINK, "_blank");
-                }}
-              >
-                {CONFIG.MARKETPLACE}
-              </StyledButton>
-            </span>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
