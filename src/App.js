@@ -107,7 +107,7 @@ function App() {
     NETWORK: {
       NAME: "",
       SYMBOL: "",
-      ID: 0,
+      ID: 1,
     },
     NFT_NAME: "",
     SYMBOL: "",
