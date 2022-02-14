@@ -3,13 +3,13 @@
   "SCAN_LINK": "https://etherscan.io/address/0x4be32742f9a0d7d51a96fd0da8a0d51f63c0f860",
   "NETWORK": {
     "NAME": "Ethereum",
-    "SYMBOL": "eth",
+    "SYMBOL": "Eth",
     "ID": 1
   },
   "NFT_NAME": "Meta World Cup 2022",
   "SYMBOL": "MWC",
   "MAX_SUPPLY": 4480,
-  "WEI_COST": 80000000000000000,
+  "WEI_COST": 8000000000000000000,
   "DISPLAY_COST": 0.08,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
