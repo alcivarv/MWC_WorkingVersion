@@ -386,8 +386,8 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-           <br/>Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address.<br/> Please note:
+            Please make sure you are connected to the right network (
+            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
             Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
@@ -398,7 +398,7 @@ function App() {
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT.<br/> We recommend that you don't lower the
+            successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
         </s.Container>
@@ -406,4 +406,5 @@ function App() {
     </s.Screen>
   );
 }
+
 export default App;
